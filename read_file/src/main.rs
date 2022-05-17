@@ -2,7 +2,7 @@ use std::fs::File;
 use std::io::{BufRead, BufReader};
 
 fn main() {
-    let filename = "src/foo.txt";
+    let filename = "foo.txt";
     // Open the file in read-only mode (ignoring errors).
     let file = File::open(filename).unwrap();
     let reader = BufReader::new(file);
